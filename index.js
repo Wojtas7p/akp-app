@@ -6,7 +6,9 @@ const {port} = require('./config')
 const apiRouter = require('./routes/api');
 
 // Dodaj obsługę CORS
-app.use(cors());
+app.use(cors({
+    origin: 'https://main--akpdatabase.netlify.app' // Podaj adres swojego frontend na Netlify
+}));
 
 // Dodaj obsługę parsowania JSON
 app.use(express.json());
@@ -21,10 +23,9 @@ require('./db/models/note');
 app.use('/', apiRouter);
 
 //server
-app.listen(port, function(){
-    console.log('serwer słucha... http://localhost:' + port);
+app.listen(port, function () {
+    console.log(`Serwer słucha... http://localhost:${port}`);
 });
-
 
 
 
