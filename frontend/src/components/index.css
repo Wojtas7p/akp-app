@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    border: none;
+    outline: none;
+    /* user-select: none; */
+}
+
+html {
+    background-color: rgb(213, 234, 222);
+}
+
+.mainApp {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5rem 5%;
+    background-color: rgb(213, 234, 222);
+
+}
+
+.mainApp h1 {
+    font-family: "Playwrite NL", cursive;
+    font-weight: 600;
+}
+
+.appWraper {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+   
+}
+
+.mainEl {
+    width: 17%;
+
+}
+
+.mainLogo {
+    width: 100%;
+    height: 2.5rem;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(220, 220, 220);
+}
+
+.mainLogo .logoContent {
+    width: 90%;
+    height: 1.8rem;
+    padding: .1rem .5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-right: solid rgba(255, 255, 255, 1) .2rem;
+}
+
+.mainLogo:hover>.logoContent {
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 1);
+    border-right: solid rgba(255, 255, 255, 1) .2rem;
+}
+
+.active {
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.mainImage {
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.mainTitle {
+    overflow: hidden;
+}
+
+
+.mainBody {
+    /* display: block; */
+    /* background-color: rgba(255, 255, 255, 1); */
+    background-image: linear-gradient(to bottom, rgba(250,250,250) 70%, transparent 30%);
+    background-color: transparent;
+    filter: brightness(120%);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 1% 0 5rem 0;
+}
+
+.grid-conteiner {
+    width: 100%;
+    min-height: 20vh;
+    display: grid;
+    border: solid rgb(255, 255, 255) 1rem;
+    grid-template-columns: minmax(30%, 1fr) minmax(30%, 1fr) minmax(30%, 1fr);
+    column-gap: .2rem;
+    background-color: #fff3c0;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.bodyClass {
+    display: inline-flex;
+    font-family: "Playwrite NL", cursive;
+    font-size: .8rem;
+    align-items: center;
+    padding: .3rem 1rem .3rem 0;
+    margin: 1rem;
+    border-radius: 2rem 0 0 2rem;
+    box-shadow: 0 .1rem .5rem .1rem rgb(153, 151, 151);
+}
+
+/* 
+
+
+/* .grid-item{
+   
+} */
+
+.grid-Title {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: .2rem .5rem;
+    margin: .2rem 0 0 .2rem;
+    overflow: hidden;
+    align-items: center;
+}
+
+/* .grid-Title :nth-child(n){
+    margin-left: auto;
+} */
+.grid-Title div {
+    margin: 0 auto;
+    overflow: auto;
+    scrollbar-width: none;
+    white-space: nowrap;
+
+}
+
+.grid-Title div h4 {
+    font-size: 1.1rem;
+
+}
+
+.grid-Title div h4:hover {
+    color: rgb(100, 100, 100)
+}
+
+.grid-Title div {
+    display: inline-flex;
+    min-width: 4.4rem;
+}
+
+
+.grid-conteiner .grid-elements-box {
+    background-color: rgb(200, 210, 190);
+    /* background: linear-gradient(to right,white 0%, rgb(200, 210, 190) 10%, white 100%); */
+    margin: .2rem 0 .2rem .2rem;
+    padding: 0 .5rem 0 2.5rem;
+    position: relative;
+}
+
+.grid-elements-box .grid-element {
+    display: flex;
+    align-items: center;
+    /* align-content: center; */
+    /* justify-content: space-between; */
+}
+
+.grid-elements-box .grid-element div:nth-child(2),
+.grid-conteiner .grid-elements-box .bodyText {
+    width: 100%;
+    /* position: relative; */
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 auto 0 5%;
+    overflow: auto;
+    scrollbar-width: none;
+    white-space: nowrap;
+    border-right: transparent solid 1rem;
+}
+
+.grid-conteiner .grid-elements-box .bodyText {
+    font-weight: 400;
+}
+
+.grid-elements-box .grid-element div:hover {
+    color: rgb(70, 70, 70);
+}
+
+.grid-elements-box .grid-element div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    width: 2.5rem;
+    position: absolute;
+    margin: auto 0;
+    left: 0;
+}
+
+
+
+
+
+/* ===================== bottoms =========================*/
+.bottomStyle {
+    display: flex;
+    align-items: center;
+    margin: 2rem auto 0;
+    border-radius: 2rem;
+    padding: .2rem 1rem;
+    background-color: rgb(199, 57, 6);
+    filter: brightness(110%);
+    box-shadow: 0 0 .1rem .1rem rgb(155, 44, 1);
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 100;
+    border: none;
+}
+
+.bottomStyle span {
+    display: inline;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.bottomStyle:hover {
+    box-shadow: none;
+    filter: none;
+
+}
+
+.formBottom {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: rgb(2, 145, 0);
+    filter: brightness(120%);
+    box-shadow: 0 0 .1rem .1rem rgb(2, 99, 1);
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 100;
+    border: none;
+
+}
+
+.formBottom:hover {
+    box-shadow: none;
+    filter: none;
+}
+
+.deleteBottom {
+    width: 1.7rem;
+    height: 2.1rem;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    right: .1rem;
+    top: .2rem;
+    color: #004cbe;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.deleteBottom:hover {
+    background-color: rgb(220, 220, 220);
+    border-radius: 0 0 0 50%;
+    transform: scale(1.2);
+    /* box-shadow: -.02rem .02rem .1rem .02rem rgb(153, 151, 151); */
+
+}
+
+.classBottom {
+    color: #004cbe;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 2rem;
+    display: inline;
+    min-width: 2.5rem;
+    /* Maksymalna szerokość */
+    height: 2.5rem;
+}
+
+.classBottom:hover {
+    border-radius: 50%;
+    background-color: #cfc396;
+    transform: scale(1.1);
+}
+
+.bodyClass .formBottom {
+    margin: .2rem .5rem;
+}
+
+.categoryForm .classBottom {
+    margin: 0 auto
+}
+
+.grid-Title .classBottom {
+    font-size: 1.4rem;
+    max-width: 2.2rem;
+    height: 2.2rem;
+}
+
+.modal .formElBottoms .classBottom {
+    box-shadow: 0 .1rem .5rem .1rem rgb(170, 170, 170);
+    width: 100%;
+    min-width: 4rem;
+}
+
+.modal .formElBottoms .classBottom:hover {
+    background-color: #c9c9c9;
+    border-radius: 0;
+    transform: scale(.9);
+}
+
+/* ============================= Forms ========================== */
+
+.categoryForm {
+    position: sticky;
+    top: 10%;
+    z-index: 1;
+
+}
+
+/* .mainForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; 
+} */
+
+.modal {
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem 2rem;
+    z-index: 1;
+}
+
+.categoryForm .modal {
+    height: 100%;
+    min-height: 50vh;
+    position: absolute;
+}
+
+.categoryForm .modal h3 {
+    margin: auto;
+}
+
+.categoryForm .modal .classBottomDelete{
+    color: #004cbe;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 2rem;
+    display: inline;
+    min-width: 2.5rem;
+    margin: auto;
+    padding: 0 1rem;
+    height: 3rem;
+}
+
+.categoryForm .modal .classBottomDelete span {
+    border-radius: 2rem;
+    font-size: 1.4rem;
+}
+
+.categoryForm .modal .classBottomDelete:hover {
+    border-radius: 2rem;
+    min-width: 8rem;
+    background-color: #cfc396;
+    transform: scale(1.1);
+}
+
+.inputForm,
+.textForm {
+    resize: none;
+    border: none;
+    font-size: 1.2rem;
+    scrollbar-width: none;
+    padding: .5rem 1rem;
+    background-color: #c9c9c9;
+}
+
+.lableForm {
+    margin: auto 1rem;
+}
+
+.modal h2 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.modal-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-box {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.errorText {
+    width: 100%;
+    text-align: center;
+    color: rgb(237, 5, 5);
+    margin-top: 1rem;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+
+.grid-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+}
+
+
+.grid-form .modal div {
+    margin-top: 1rem;
+
+}
+
+.grid-form .modal{
+
+min-width: 100%;
+min-height: 100%;
+ /* top: 50%;
+ left: 50%; */
+
+
+}
+
+.grid-form .modal .formElBottoms {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.2rem;
+    background-color: rgb(170, 170, 170);
+    border: none;
+    cursor: pointer;
+}
+
+/* Stylizacja zaznaczenia */
+input[type="checkbox"]::after {
+    content: "";
+    position: relative;
+    bottom: .7rem;
+    left: .1rem;
+    width: .7rem;
+    height: 1.4rem;
+    border: solid green;
+    /* Zielony haczyk */
+    border-width: 0 5px 5px 0;
+    transform: rotate(50deg);
+    display: none;
+}
+
+/* Pokazywanie zaznaczenia po kliknięciu */
+input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+
+
+
+.shopsList{
+    display: block;
+   margin: 0 0  0 auto;
+}
+
+.shopsImage{
+    margin: 0 auto 0 20%;
+}
+
+.shopsImage, .shopsList, .unitSelect{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 600;
+   
+}
+.unitSelect{
+
+    margin-right: auto;
+    margin-left: 2rem;
+    
+}
+.unitSelect label{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.unitSelect select{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.nrForm{
+    margin: 0 2rem 0 auto;
+    background-color: #c9c9c9;
+    font-size: 1rem;
+    padding: .5rem .1rem .5rem .8rem;
+}
+
+
+.unit{
+    margin: 0 .5rem 0 .1rem;
+}
