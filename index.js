@@ -18,12 +18,11 @@ app.use(cors());
 
 // app.use(cors(corsOptions));
 
+//db
+require('./db/mongoose');
 
 // Dodaj obsługę parsowania JSON
 app.use(express.json());
-
-//db
-require('./db/mongoose')
 
 // import note.js to ensure the note is saved
 require('./db/models/note');
